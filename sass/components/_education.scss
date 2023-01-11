@@ -3,12 +3,12 @@
 .education {
   background-color: var(--second-background-color);
 
-  padding-top: 60px;
+  // padding-top: 60px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -85,10 +85,14 @@
 }
 
 .education__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
   padding-bottom: 30px;
   padding-top: 30px;
   background-color: var(--background-color-section);
-  height: 100%;
+  height: 300px;
 }
 
 .education__name {
