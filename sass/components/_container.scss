@@ -27,13 +27,13 @@
 
 .about__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
-
+flex-direction: row;
+justify-content: space-between;
+margin: 0 auto;
   padding-top: 60px;
   padding-left: 200px;
-  padding-right: 50px;
+  padding-right: 100px;
   padding-bottom: 60px;
 
 

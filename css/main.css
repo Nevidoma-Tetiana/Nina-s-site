@@ -1,6 +1,6 @@
 /** @format */ /** @format */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Philosopher", sans-serif;
   font-size: 14px;
   color: var(--main-text-color);
   background: var(--background-color);
@@ -27,7 +27,8 @@ img {
   height: auto;
 }
 
-.list {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -39,7 +40,7 @@ a {
 }
 
 .btn {
-  font-family: "Roboto";
+  font-family: inherit;
 }
 
 .visually-hidden {
@@ -72,8 +73,8 @@ a {
 /** @format */
 :root {
   --accent-color: #dfc2af;
-  --background-color: #dfc2af;
-  --main-text-color: #0b0b0b;
+  --background-color: #090909;
+  --main-text-color: #ffffff;
   --second-text-color: #757575;
   --background-color-section: #bfd4e6;
   --primary-white-color: #ffffff;
@@ -132,12 +133,13 @@ a {
 
 .about__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
   padding-top: 60px;
   padding-left: 200px;
-  padding-right: 50px;
+  padding-right: 100px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
@@ -180,7 +182,7 @@ a {
 .header {
   position: relative;
   border-bottom: 1px solid var(--header-border-line);
-  background-color: var(--second-background-color);
+  background-color: var(--background-color);
 }
 
 .contacts__container {
@@ -998,77 +1000,32 @@ a {
 
 @media screen and (min-width: 768px) {
   .about__list {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
+    display: inline-flex;
+    flex-direction: column;
     margin: -15px;
   }
 }
 
 .about__item {
-  background-color: inherit;
+  flex-direction: column;
   margin-bottom: 30px;
-  width: 270px;
   box-sizing: border-box;
-}
-@media screen and (max-width: 767.5px) {
-  .about__item:last-child {
-    margin-bottom: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about__item {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about__item {
-    width: calc((100% - 120px) / 4);
-    margin: 15px;
-  }
-}
-
-.about__image {
-  min-width: 100%;
-  position: relative;
-}
-
-.about__part1,
-.about__part2,
-.about__part3 {
-  position: relative;
-  overflow: hidden;
-  background-color: inherit;
-  margin-bottom: 30px;
-  width: 100%;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 767.5px) {
-  .about__part1:last-child,
-.about__part2:last-child,
-.about__part3:last-child {
-    margin-bottom: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about__part1,
-.about__part2,
-.about__part3 {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about__part1,
-.about__part2,
-.about__part3 {
-    width: calc((100% - 120px) / 4);
-    margin: 15px;
-  }
 }
 
 .about__wrap {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.about__text {
+  display: flex;
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

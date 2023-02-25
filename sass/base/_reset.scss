@@ -1,10 +1,11 @@
 /** @format */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Philosopher", sans-serif;
   font-size: 14px;
-  color: var(--main-text-color);
-  background: var(--background-color);
+  // font-style: italic;
+  color: var( --main-text-color);
+  background:  var( --background-color);
 }
 
 h1,
@@ -26,7 +27,8 @@ img {
   height: auto;
 }
 
-.list {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -38,7 +40,7 @@ a {
 }
 
 .btn {
-  font-family: "Roboto";
+  font-family: inherit;
 }
 
 .visually-hidden {
